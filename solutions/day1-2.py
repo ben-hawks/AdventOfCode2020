@@ -6,7 +6,7 @@ import numpy as np
 def find2020(nums):
     nums.sort() # sort to make life easy
     n = len(nums)
-    for idx in range(0,n-3): #range doesn't include last value,so for our window to work correctly add 1 to n-2
+    for idx in range(0,n-1): #range doesn't include last value,so for our window to work correctly add 1 to n-2
         j = nums[idx]
         left, right = idx+1, n-1 #set search window
         while left < right:
